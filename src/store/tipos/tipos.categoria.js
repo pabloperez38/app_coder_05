@@ -1,3 +1,3 @@
-export const tipoCategoria = {
+export const tiposCategoria = {
   SELECCIONAR_CATEGORIA: "SELECCIONAR_CATEGORIA",
 };

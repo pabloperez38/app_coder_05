@@ -1,7 +1,7 @@
 import { CATEGORIAS } from "../../constantes/datos";
-import { tipoCategoria } from "../tipos";
+import { tiposCategoria } from "../tipos";
 
-const { SELECCIONAR_CATEGORIA } = tipoCategoria;
+const { SELECCIONAR_CATEGORIA } = tiposCategoria;
 const initialState = { categorias: CATEGORIAS, selected: null };
 
 const reductorCategoria = (state = initialState, action) => {

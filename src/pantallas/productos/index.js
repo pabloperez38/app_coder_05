@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
+import { productosFiltrados, seleccionarProducto } from "../../store/acciones";
 import { useDispatch, useSelector } from "react-redux";
 
 import { FlatList } from "react-native";
-import { ItemProducto } from "../../componentes/item-producto";
-import { productosFiltrados } from "../../store/acciones";
+import { ItemProducto } from "../../componentes";
 import { styles } from "./styles";
 
 const Productos = ({ navigation }) => {
   const categoria = useSelector((state) => state.categoria.selected);
+  console.warn("categoria", categoria);
   const productoFiltrado = useSelector(
     (state) => state.productos.productoFiltrado
   );
@@ -16,11 +17,11 @@ const Productos = ({ navigation }) => {
   useEffect(() => {
     dispatch(productosFiltrados(categoria.id));
   }, []);
-  console.warn("categoria", categoria.id);
+
   const onSelected = (item) => {
+    dispatch(seleccionarProducto(item.id));
     navigation.navigate("Producto", {
       titulo: item.title,
-      productoId: item.id,
     });
   };
   const renderItem = ({ item }) => (

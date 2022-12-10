@@ -1,6 +1,6 @@
-import { tipoProductos } from "../tipos";
+import { tiposProductos } from "../tipos";
 
-const { PRODUCTOS_FILTRADOS, SELECCIONAR_PRODUCTO } = tipoProductos;
+const { PRODUCTOS_FILTRADOS, SELECCIONAR_PRODUCTO } = tiposProductos;
 
 export const seleccionarProducto = (id) => ({
   type: SELECCIONAR_PRODUCTO,

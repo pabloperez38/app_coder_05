@@ -1,7 +1,7 @@
 export const PRODUCTOS = [
   {
     id: 1,
-    categoryId: 1,
+    categoriaId: 1,
     title: "Pan de yema",
     description: "Clásico y delicioso pan de yema",
     weight: "60gr",
@@ -11,7 +11,7 @@ export const PRODUCTOS = [
   },
   {
     id: 2,
-    categoryId: 1,
+    categoriaId: 1,
     title: "Pan francés",
     description: "Clásico y tierno pan frances",
     weight: "80gr",
@@ -20,7 +20,7 @@ export const PRODUCTOS = [
   },
   {
     id: 3,
-    categoryId: 2,
+    categoriaId: 2,
     title: "Pan integral",
     description: "Clásico y saludable pan integral",
     weight: "70gr",
@@ -30,7 +30,7 @@ export const PRODUCTOS = [
   },
   {
     id: 4,
-    categoryId: 2,
+    categoriaId: 2,
     title: "Pan Frances integral",
     description: "Clásico y tierno pan frances integral",
     weight: "90gr",
@@ -40,7 +40,7 @@ export const PRODUCTOS = [
   },
   {
     id: 5,
-    categoryId: 3,
+    categoriaId: 3,
     title: "Pan de trigo",
     description: "Clásico y delicioso pan de trigo",
     weight: "60gr",
@@ -50,7 +50,7 @@ export const PRODUCTOS = [
   },
   {
     id: 6,
-    categoryId: 3,
+    categoriaId: 3,
     title: "Pan de hamburguesa",
     description: "Clásico y delicioso pan de hamburguesa",
     weight: "60gr",
@@ -60,7 +60,7 @@ export const PRODUCTOS = [
   },
   {
     id: 7,
-    categoryId: 4,
+    categoriaId: 4,
     title: "Pan de maíz",
     description: "Clásico y delicioso pan de maíz",
     weight: "60gr",
@@ -70,7 +70,7 @@ export const PRODUCTOS = [
   },
   {
     id: 8,
-    categoryId: 5,
+    categoriaId: 5,
     title: "Pan de centeno",
     description: "Clásico y delicioso pan de centeno",
     weight: "60gr",
@@ -80,7 +80,7 @@ export const PRODUCTOS = [
   },
   {
     id: 9,
-    categoryId: 6,
+    categoriaId: 6,
     title: "Pan de cebada",
     description: "Clásico y delicioso pan de cebada",
     weight: "60gr",

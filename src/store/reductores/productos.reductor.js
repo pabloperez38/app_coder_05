@@ -1,7 +1,7 @@
 import { PRODUCTOS } from "../../constantes/datos";
-import { tipoProductos } from "../tipos";
+import { tiposProductos } from "../tipos";
 
-const { PRODUCTOS_FILTRADOS, SELECCIONAR_PRODUCTO } = tipoProductos;
+const { PRODUCTOS_FILTRADOS, SELECCIONAR_PRODUCTO } = tiposProductos;
 const initialState = {
   productos: PRODUCTOS,
   productosFiltrados: [],
@@ -21,7 +21,7 @@ const reductorProductos = (state = initialState, action) => {
       return {
         ...state,
         productosFiltrados: state.productos.filter(
-          (producto) => producto.categoryId === action.categoriaId
+          (producto) => producto.categoriaId === action.categoriaId
         ),
       };
     default:

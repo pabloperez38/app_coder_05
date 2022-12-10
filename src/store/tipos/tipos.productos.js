@@ -1,4 +1,4 @@
-export const tipoProductos = {
+export const tiposProductos = {
   SELECCIONAR_PRODUCTO: "SELECCIONAR_PRODUCTO",
   PRODUCTOS_FILTRADOS: "PRODUCTOS_FILTRADOS",
 };
