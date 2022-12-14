@@ -1,16 +1,13 @@
 import { Image, Text, View } from "react-native";
 
-import { PRODUCTOS } from "../../constantes/datos";
 import React from "react";
 import { styles } from "./styles";
+import { useSelector } from "react-redux";
 
-const Producto = ({ navigation, route }) => {
-  const { productoId } = route.params;
+const Producto = ({ navigation }) => {
+  const producto = useSelector((state) => state.productos.selected);
 
-  const productoFiltrado = PRODUCTOS.find(
-    (producto) => producto.id === productoId
-  );
-  const { title, price, description, weight, imagen } = productoFiltrado || {};
+  const { title, price, description, weight, imagen } = producto || {};
   return (
     <View style={styles.container}>
       <Text style={styles.titulo}>{title}</Text>

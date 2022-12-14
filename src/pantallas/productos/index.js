@@ -8,10 +8,10 @@ import { styles } from "./styles";
 
 const Productos = ({ navigation }) => {
   const categoria = useSelector((state) => state.categoria.selected);
-  console.warn("categoria", categoria);
   const productoFiltrado = useSelector(
-    (state) => state.productos.productoFiltrado
+    (state) => state.productos.productosFiltrados
   );
+
   const dispatch = useDispatch();
 
   useEffect(() => {
